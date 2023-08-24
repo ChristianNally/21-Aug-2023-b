@@ -13,7 +13,7 @@ const runMyFunction = function(callback) {
 
 runMyFunction( arg1 => console.log('arg1',arg1) );
 
-runMyFunction( function(arg1){console.log('arg1',arg1)} ); // 
+runMyFunction( function(arg1){return console.log('arg1',arg1);} ); // 
 
 
 // 4. arrow functions without curly braces automatically return whatever is to the right of the arrow

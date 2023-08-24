@@ -6,6 +6,9 @@ function product(x,y){
 
 
 
+// doActionFourTimes( () => {console.log('monkey')} );
+
+
 
 const runDatabaseQuery = function(action) {
   // console.log(action.toString());

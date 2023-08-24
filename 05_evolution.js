@@ -1,5 +1,7 @@
-const animalNoises = ['Oink', 'Moo', 'Meow', 'Bark', 'Oof', 'Nehhhh', 'Boww', 'Haaay', 'Quack'];
+const animalNoises = ['Oink', 'Moo', 'Meow', 'Bark', 
+'Oof', 'Nehhhh', 'Boww', 'Haaay', 'Quack'];
 
+//            animalNoises, thingToDo
 const forEach = (arr, action) => {
   console.log('this is our version:');
   for (const element of arr) {
@@ -32,20 +34,13 @@ const arrayOfFunctions = [func1, func2, func3];
 
 function processor(listOfActions, data){
 
-
- listOfActions.forEach( (eachFunction)=>{  eachFunction(data)  } );
-
+  listOfActions.forEach( (eachFunction)=>{  eachFunction(data)  } );
 
 //
-
 
   for (let ii = 0; ii < arrayOfFunctions.length; ii++){
     listOfActions[ii](data);
   }
-
-
-
-
 
 }
 

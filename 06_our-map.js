@@ -1,3 +1,4 @@
+//         animalNoises, animalNoise => `only the best animals say ${animalNoise}`
 const ourMap = (arr, callback) => {
   const output = [];
 

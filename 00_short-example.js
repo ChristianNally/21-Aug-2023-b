@@ -14,7 +14,7 @@ const funct = function(parameter){ process.stdout.write(parameter*2 + " "); };
 
 // An example where the parameter is a placeholder for a number
 function addTen(value){
-  output = value + 10;
+  let output = value + 10;
   console.log(`addTen output is ${output}`);
 }
 console.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'); addTen(number);
@@ -26,10 +26,13 @@ function appendBlah(string){
 }
 console.log('\n\n\n\n'); appendBlah(text);
 
-// A CALLBACK is a parameter that is a placeholder for a function
+// A CALLBACK is a parameter that is a placeholder for a function definition
 function doActionFourTimes(action){  // <--- action is a 'callback'
   for (let ii = 0; ii < 4; ii++){
     action(ii);   // <--- pay special attention to how the callback is executed
   } console.log('');
 }
 console.log('\n\n\n\n\n'); doActionFourTimes(funct);
+doActionFourTimes( () => {
+  console.log('monkey fuzz!!!');
+} );
