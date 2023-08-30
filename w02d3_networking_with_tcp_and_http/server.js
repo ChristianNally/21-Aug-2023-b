@@ -21,11 +21,14 @@ server.on('connection', (client) => {
             clientName = clientName.replace(/^\s+|\s+$/g, '');
             console.log('setting client name to=', clientName);
             client.name = clientName;
+            return;
         }
 
         connectedClients.forEach((eachClient) => {
-            const outGoingMessage = `${client.name} > ${message}`;
-            eachClient.write(outGoingMessage);
+            if (eachClient !== client){
+                const outGoingMessage = `${client.name} > ${message}`;
+                eachClient.write(outGoingMessage);                    
+            }
         });
 
     });
