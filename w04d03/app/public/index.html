@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="food-items.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="food-item.js"></script>
+
+  <title>Food Items</title>
+</head>
+<body>
+  <h2>All the Food Items!</h2>
+
+  <div>
+    <form id="new-food-item-form">
+      <label>Name:</label>
+      <input name="name" />
+      <br/>
+      <label>Tagline:</label>
+      <input name="tagline" />
+      <br/>
+      <label>Price:</label>
+      <input name="price" />
+      <br/>
+      <label>Calories:</label>
+      <input name="calories" />
+      <br/>
+      <button type="submit">Create!!</button>
+    </form>
+  </div>
+
+  <section id="food-item-container"></section>
+</body>
+</html>

@@ -7,6 +7,7 @@ const port = 3003;
 
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public'));
 
 // GET /food-items
 app.get('/food-items', (req, res) => {
