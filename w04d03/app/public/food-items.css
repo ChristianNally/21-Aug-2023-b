@@ -1,0 +1,17 @@
+.food-item {
+  border: 2px solid green;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.food-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-item-footer {
+  display: flex;
+  justify-content: space-between;
+}
