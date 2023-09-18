@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Meme</title>
+</head>
+<body>
+    <form action="/edit/<%= memeKey %>" method="POST">
+
+        <label for="text">Text</label>
+        <input id="text" name="text" value="<%= meme.text %>"/>
+        <br/>
+
+        <label for="url">URL</label>
+        <input id="url" name="url" value="<%= meme.url %>"/>
+        <br/>
+
+        <button>Edit</button>
+    </form>
+</body>
+</html>
