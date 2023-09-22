@@ -41,24 +41,26 @@
 - Remember RESTful conventions (they make it much easier)
 
 ### RESTful Endpoints Example
-Browse  GET   /users
-Read    GET   /users/:id
-Edit    POST  /users/:id
-Add     POST  /users
-Delete  POST  /users/:id/delete
 
-GET /users/:id/maps
-GET /videos/:id/comments
+| Action | Verb | Path |
+|---|---|---|
+|Browse|GET|/users|
+|Read|GET|/users/:id|
+|Edit|POST|/users/:id|
+|Add|POST|/users|
+|Delete|POST|/users/:id/delete|
 
-PUT - replace a resource completely
-PATCH - replace a piece of a resource
-DELETE - deletes a resource
+PUT - replace a resource completely  
+PATCH - replace a piece of a resource  
+DELETE - deletes a resource  
 
-Browse  GET      /dinosaurs
-Read    GET      /dinosaurs/:id
-Edit    PATCH    /dinosaurs/:id
-Add     POST     /dinosaurs
-Delete  DELETE   /dinosaurs/:id
+| Action | Verb | Path |
+|---|---|---|
+|Browse|GET|/users|
+|Read|GET|/users/:id|
+|Edit|PATCH|/users/:id|
+|Add|POST|/users|
+|Delete|DELETE|/users/:id|
 
 ### MVP vs MVD
 - There is a concept in development of an MVP, the Minimum Viable Product
