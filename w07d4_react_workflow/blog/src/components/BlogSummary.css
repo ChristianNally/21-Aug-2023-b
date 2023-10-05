@@ -1,0 +1,10 @@
+.blog_summary {
+    border: 3px solid black;
+    margin: 5px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.blog_summary h2 {
+    font-size: 1em;
+}
