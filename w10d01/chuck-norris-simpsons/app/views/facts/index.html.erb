@@ -1,0 +1,9 @@
+<h1>All the facts!</h1>
+
+<% @facts.each do |fact| %>
+  <div class="fact">
+    <h2>Location: <%= fact.location %></h2>
+    <h2>Fact: <%= fact.fact %></h2>
+    <h2>Character: <%= fact.character.name %></h2>
+  </div>
+<% end %>
